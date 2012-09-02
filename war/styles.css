@@ -1,0 +1,47 @@
+body {
+	width: 40em;	
+	margin: 0 auto;
+	padding: 10px;
+	color: #333;
+	font-family: "segoe ui", helvetica, "bitstream vera sans", "dejavu sans",
+		"bitstream vera sans", "trebuchet ms", verdana, "verdana ref",
+		sans serif;
+}
+
+h1 {
+	font-size: 132%;
+	margin: 0  0 15px 0;
+}
+
+label {
+	width: 12em;
+	float: left;
+	clear: left;	
+}
+
+.gwt-CheckBox {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.gwt-CheckBox label {
+	float: none;
+	width: inherit;
+	color: #06C;
+	cursor: pointer;
+}
+
+input {
+	float: left;
+}
+
+.result {
+	clear: both;	
+}
+
+#calculator {
+	border: 1px solid #DDD;
+	background: #EEE;
+	padding: 10px;
+	min-height: 10em;
+}

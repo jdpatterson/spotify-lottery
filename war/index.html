@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<title>Spotify ticket probability</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="lottery/lottery.nocache.js"></script>
+<style>
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #EDECE8;
+	color: #666;
+	font: 14px/24px 'helvetica neue', arial, helvetica, sans-serif;
+}
+
+.container {
+	width: 45em;
+	margin: 3em auto;
+	color: #333;
+	background-color: white;
+	height: 100%;
+}
+
+.container .panel {
+	padding: 20px 10px;
+}
+
+h1 {
+	font-size: 132%;
+	margin: 0 0 15px 0;
+	font-weight: bold;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.68);
+	color: white;
+}
+
+label {
+	width: 12em;
+	float: left;
+	clear: left;
+}
+
+.gwt-CheckBox {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.gwt-CheckBox label {
+	float: none;
+	width: inherit;
+	color: #243748;
+	cursor: pointer;
+}
+
+input[type="text"] {
+	float: left;
+	width: 12em;
+}
+
+.result {
+	clear: both;
+}
+
+#calculator {
+	border: 1px solid #6c8aa4;
+	padding: 10px;
+	min-height: 8em;
+}
+
+#calculator table {
+	width: 100%;
+}
+
+#calculator .result {
+	border: 1px solid #CCC;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.error {
+	outline: 2px solid red;
+}
+
+header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 0 45px;
+	border-top: 9px solid #242C32;
+	border-bottom: 1px solid #686A6C;
+	box-shadow: rgba(0, 0, 0, .6) 0 0 8px;
+	background: #80B719;
+	background: -moz-linear-gradient(top, rgba(129, 184, 25, 1) 0%,
+		rgba(128, 183, 25, 1) 60%, rgba(128, 183, 25, 0.85) 100% );
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(129,
+		184, 25, 1) ), color-stop(60%, rgba(128, 183, 25, 1) ),
+		color-stop(100%, rgba(128, 183, 25, 0.85) ) );
+	height: 3em;
+	line-height: 3em;
+}
+
+header .wrapper {
+	overflow: visible;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 45em;
+	margin: 0 auto;
+}
+</style>
+<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<h1>The Great Spotify Ticket Lottery Probability Calculator</h1>
+		</div>
+	</header>
+	<div class="container">
+		<div class="panel">
+			<p class="description">
+				This web app solves the <a
+					href="http://www.spotify.com/uk/jobs/tech/ticket-lottery/">Ticket
+					Lottery</a> problem implemented as a client-side application that can
+				either calculate the answer in the browser or from a backend server
+				running "in the cloud" (<a
+					href="https://developers.google.com/appengine/">Google App
+					Engine</a>). The exact same Java source code is used in both cases -
+				compiled to Javascript for the browser and to bytecode for the
+				server.
+			</p>
+			<ul>
+				<li><a href="">LotteryCalulator.java</a> implements the
+					business logic</li>
+				<li><a href="">LotteryCalulatorTestCase.java</a> tests the
+					sample inputs</li>
+				<li><a href="">Source code</a> on Github for entire web app</li>
+				<li><a href="">Executable jar</a> accepts parameters from
+					standard in</li>
+				<li><a href="http://www.facebook.com/pattersonjd">The coder</a>
+					John Patterson on Facebook. Me!</li>
+			</ul>
+
+			<p>The result is calculated when valid values are entered for
+				each parameter</p>
+			<div id="calculator"></div>
+			<p>
+				I would love to work for you guys! I love music and coding and
+				studied part of my computer science degree in Boras, Sweden while
+				doing an exchange from medical school. During the summer break, I
+				worked at <a href="">Hultsfred Festivalen</a> 1996 and saw Prodigy
+				and The Cure from the front of the stage!
+			</p>
+			<p>I enjoyed the study and my time in Sweden so much that I quit
+				medical school to follow a career in software development. My
+				Swedish language skills have faded to a few phrases and the odd word
+				but I would love to revive them.</p>
+			<p>
+				I'm a big fan of open source software and am the author of <a
+					href="">Twig</a>, a data access library that builds upon Googles
+				NoSQL "datastore" (BigTable). I've also helped with the API design
+				of a similar project, <a href="">Objectify</a> and am a committer to
+				Google <a href="">Sitebricks</a> web framework. Normally I code in
+				Java but have also worked with Python and C++ and have an interest
+				in <a href="">Ceylon</a> for future work.
+			</p>
+			<p>
+				I'm from New Zealand and currently in London until September 11
+				before returning to <a href="">Koh Samui</a>, Thailand where I've
+				been living for the last two years. I really want to be a part of a
+				team of great developers again building cool stuff!
+			</p>
+		</div>
+	</div>
+</body>
+</html>
