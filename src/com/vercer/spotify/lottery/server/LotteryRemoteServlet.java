@@ -3,11 +3,11 @@ package com.vercer.spotify.lottery.server;
 import javax.inject.Singleton;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.vercer.spotify.lottery.client.LotteryCalculator;
+import com.vercer.spotify.lottery.client.GwtLotteryCalculator;
 import com.vercer.spotify.lottery.client.StandardLotteryCalculator;
 
 @Singleton
-public class LotteryRemoteServlet extends RemoteServiceServlet implements LotteryCalculator
+public class LotteryRemoteServlet extends RemoteServiceServlet implements GwtLotteryCalculator
 {
 	private static final long serialVersionUID = 1L;
 

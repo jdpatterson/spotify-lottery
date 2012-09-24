@@ -1,10 +1,6 @@
 package com.vercer.spotify.lottery.client;
 
-import com.google.gwt.user.client.rpc.RemoteService;
-import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
-
-@RemoteServiceRelativePath("calculator")
-public interface LotteryCalculator extends RemoteService
+public interface LotteryCalculator
 {
 	/**
 	 * @param tickets The total number of tickets sold in the lottery

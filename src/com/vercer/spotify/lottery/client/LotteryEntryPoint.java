@@ -102,7 +102,7 @@ public class LotteryEntryPoint implements EntryPoint, ChangeHandler, ClickHandle
 				resultLabel.setText("");
 				if (serverCheckBox.getValue())
 				{
-					LotteryCalculatorAsync asyncCalculator = GWT.create(LotteryCalculator.class);
+					GwtLotteryCalculatorAsync asyncCalculator = GWT.create(GwtLotteryCalculator.class);
 					busyImage.setVisible(true);
 					asyncCalculator.calculate(tickets, winners, friends, limit, new AsyncCallback<Double>()
 					{

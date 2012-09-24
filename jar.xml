@@ -3,44 +3,12 @@
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
     <target name="create_run_jar">
-        <jar destfile="/Users/john/Development/ticket-lottery.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="/Users/john/Development/Workspace/spotify-lottery/war/ticket-lottery.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="com.vercer.spotify.lottery.LotteryCommand"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="/Users/john/Development/Workspace/spotify-lottery/test-classes"/>
             <fileset dir="/Users/john/Development/Workspace/spotify-lottery/war/WEB-INF/classes"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/appengine-local-runtime-shared.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/appengine-local-webapis.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/el-api.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/jsp/repackaged-appengine-ant-1.7.1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/jsp/repackaged-appengine-ant-launcher-1.7.1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/jsp/repackaged-appengine-jasper-6.0.29.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/jsp/repackaged-appengine-jasper-el-6.0.29.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/jsp/repackaged-appengine-tomcat-juli-6.0.29.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/jsp-api.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/shared/servlet-api.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/appengine-api-1.0-sdk-1.6.6.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/appengine-api-labs-1.6.6.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/appengine-jsr107cache-1.6.6.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/jsr107cache-1.1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/orm/datanucleus-appengine-1.0.10.final.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/orm/datanucleus-core-1.1.5.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/orm/datanucleus-jpa-1.1.5.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/orm/geronimo-jpa_3.0_spec-1.1.1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/orm/geronimo-jta_1.1_spec-1.1.1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/user/orm/jdo2-api-2.3-eb.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.appengine.eclipse.sdkbundle_1.6.6/appengine-java-sdk-1.6.6/lib/appengine-tools-api.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/gwt-user.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/gwt-dev.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/validation-api-1.0.0.GA.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Tools/Eclipse/3.7/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Workspace/spotify-lottery/war/WEB-INF/lib/guice-3.0.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Workspace/spotify-lottery/war/WEB-INF/lib/guice-servlet-3.0.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Workspace/spotify-lottery/war/WEB-INF/lib/javax.inject-1.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="/Users/john/Development/Workspace/spotify-lottery/war/WEB-INF/lib/aopalliance-1.0.jar"/>
         </jar>
     </target>
 </project>

@@ -4,7 +4,6 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 import com.google.inject.Guice;
-import com.google.inject.Injector;
 import com.google.inject.Stage;
 
 public class GuiceContextListener implements ServletContextListener
@@ -12,7 +11,7 @@ public class GuiceContextListener implements ServletContextListener
 	@Override
 	public void contextInitialized(ServletContextEvent arg0)
 	{
-		Injector injector = Guice.createInjector(Stage.PRODUCTION, new LotteryModule());
+		Guice.createInjector(Stage.PRODUCTION, new LotteryModule());
 	}
 	
 	@Override
